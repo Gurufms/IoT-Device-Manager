@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           	http://cxf.apache.org/simple http://cxf.apache.org/schemas/simple.xsd
+           	http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+    <!-- Device Service REST Implementation -->
+    <bean id="deviceServiceRestImpl" class="com.iot.server.DeviceServiceRestImpl">
+        <property name="deviceDao" ref="deviceDao" />
+    </bean>
+
+    <!-- Jackson JSON Provider for Data Binding -->
+    <bean id="jaxbProviderAegis-deviceService" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+
+    <!-- JAX-RS Resource Factory for Device Service -->
+    <jaxrs:server id="deviceServiceRestRs" address="/rest">
+        <jaxrs:serviceBeans>
+            <ref bean="deviceServiceRestImpl"/>
+        </jaxrs:serviceBeans>
+
+        <jaxrs:providers>
+            <!-- Register Jackson JSON provider for JSON serialization -->
+            <ref bean="jaxbProviderAegis-deviceService"/>
+        </jaxrs:providers>
+    </jaxrs:server>
+
+</beans>

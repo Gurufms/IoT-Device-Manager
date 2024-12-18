@@ -1,0 +1,2 @@
+serviceClass: com.iot.service.AuthService
+path: FAC29DAB7104B0A1DCC37846F0B1AAAA.gwt.rpc

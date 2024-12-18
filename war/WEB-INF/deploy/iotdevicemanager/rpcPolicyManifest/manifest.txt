@@ -1,0 +1,5 @@
+# Module iotdevicemanager
+# RPC service class, partial path of RPC policy file
+com.iot.service.DeviceService, 941BE6A15C767B0DDACB4BE31CFA532B.gwt.rpc
+com.iot.service.LookupService, 4F68DD1EFCC917B17CE9F8103E01C77E.gwt.rpc
+com.iot.service.AuthService, FAC29DAB7104B0A1DCC37846F0B1AAAA.gwt.rpc

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/security 
+                           http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!-- Importing the data source configuration -->
+    <import resource="classpath:applicationContext-datasource.xml" />
+    
+    <!-- AuthenticationManager with providers -->
+    <bean id="authenticationManager" class="org.springframework.security.authentication.ProviderManager">
+        <constructor-arg>
+            <list>
+                <bean class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+                    <property name="userDetailsService" ref="jdbcUserService" />
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- UserDetailsService -->
+    <bean id="jdbcUserService" class="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">
+        <property name="dataSource" ref="jdbcDataSource" />
+        <property name="usersByUsernameQuery"
+                  value="SELECT username, password, enabled FROM person WHERE username=?" />
+        <property name="authoritiesByUsernameQuery"
+                  value="SELECT username, role FROM person WHERE username=?" />
+    </bean>
+
+    <!-- Spring Security HTTP configuration -->
+   <security:http auto-config="true" use-expressions="true">
+        <security:csrf disabled="true" />
+        <security:http-basic />
+
+        <!-- Access rules  -->
+        <security:intercept-url pattern="/auth/**" access="permitAll" />
+        <security:intercept-url pattern="/user/**" access="isAuthenticated()" />
+        <security:intercept-url pattern="/device/**" access="isAuthenticated()" />
+
+        <!-- Form login configuration -->
+        <security:form-login 
+            login-page="/IoTDeviceManager.html"
+            default-target-url="/IoTDeviceManager.html"
+            authentication-failure-url="/IoTDeviceManager.html?error=true" />
+
+        <!-- Logout configuration -->
+        <security:logout logout-success-url="/login?logout=true" />
+
+        <!-- Session Management -->
+        <security:session-management  session-fixation-protection="migrateSession">
+            <security:concurrency-control max-sessions="1" expired-url="/login?expired=true" />
+        </security:session-management>
+    </security:http>
+
+    <!-- HTTP Session Event Publisher -->
+    <bean class="org.springframework.security.web.session.HttpSessionEventPublisher" />
+
+</beans>

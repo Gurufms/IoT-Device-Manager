@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.iot.domain.Lookup" table="Lookup">
+        <id name="lookupId" column="Lookup_id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="Name"/>
+        
+        <many-to-one name="category" class="com.iot.domain.Category" column="category_id" fetch="select" lazy="false" cascade="save-update,merge" />
+            
+        
+    </class>
+</hibernate-mapping>

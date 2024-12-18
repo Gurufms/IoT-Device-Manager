@@ -1,0 +1,2 @@
+serviceClass: com.iot.service.LookupService
+path: 4F68DD1EFCC917B17CE9F8103E01C77E.gwt.rpc

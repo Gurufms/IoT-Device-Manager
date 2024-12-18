@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="applicationContext-datasource.xml" />
+	<import resource="applicationContext-hibernate.xml" />
+	<import resource="transactionContext.xml" />
+	<import resource="compscanContext.xml" />
+	<import resource="restContext.xml" />
+	<import resource="securityContext.xml" />
+
+	<bean class="com.iot.server.ApplicationContextListner" />
+
+	<!-- DAO Bean Definitions -->
+
+	<bean id="userDao" class="com.iot.daoImpl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="deviceDao" class="com.iot.daoImpl.DeviceDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="lookupDao" class="com.iot.daoImpl.LookupDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+
+	<bean id="lookupService" class="com.iot.server.LookupServiceImpl">
+		<property name="lookupDao" ref="lookupDao" />
+	</bean>
+
+
+	<!-- Service Beans (Session-scoped) -->
+	<bean id="authService" class="com.iot.server.AuthServiceImpl"
+		scope="session">
+		<property name="userDao" ref="userDao" />
+	</bean>
+
+	<bean id="userService" class="com.iot.server.UserServiceImpl"
+		scope="session">
+		<property name="userDao" ref="userDao" />
+	</bean>
+
+	<bean id="deviceService" class="com.iot.server.DeviceServiceImpl">
+		<property name="deviceDao" ref="deviceDao" />
+	</bean>
+
+
+</beans>

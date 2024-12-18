@@ -1,0 +1,2 @@
+serviceClass: com.iot.service.DeviceService
+path: 941BE6A15C767B0DDACB4BE31CFA532B.gwt.rpc

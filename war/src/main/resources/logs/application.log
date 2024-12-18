@@ -1,0 +1,833 @@
+2024-10-22 12:05:33 DEBUG logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2024-10-22 12:05:33 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-10-22 12:05:33 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-10-22 12:05:33 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-10-22 12:05:33 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator].
+2024-10-22 12:05:33 INFO  Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-10-22 12:05:33 DEBUG Environment - HHH000206: hibernate.properties not found
+2024-10-22 12:05:33 DEBUG LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2024-10-22 12:05:33 WARN  deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-10-22 12:05:33 DEBUG LocalXmlResourceResolver - Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2024-10-22 12:05:33 DEBUG MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2024-10-22 12:05:33 DEBUG LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2024-10-22 12:05:33 WARN  deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-10-22 12:05:33 DEBUG LocalXmlResourceResolver - Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2024-10-22 12:05:33 DEBUG MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2024-10-22 12:05:33 DEBUG Configuration - Building session factory using internal StandardServiceRegistryBuilder
+2024-10-22 12:05:33 DEBUG ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2024-10-22 12:05:33 DEBUG Configuration - Building session factory using provided StandardServiceRegistry
+2024-10-22 12:05:33 DEBUG RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-10-22 12:05:33 DEBUG RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024-10-22 12:05:33 INFO  Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1f9f8683
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1f9f8683
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1f9f8683
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@21b26eb6
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@54c15b15
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@143977f1
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@ac35c4d
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@ac35c4d
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@ac35c4d
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@3378b8c6
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@3378b8c6
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3378b8c6
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7a49293f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7a49293f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7a49293f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@412cf46f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@412cf46f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@412cf46f
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@25850671
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@25850671
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@25850671
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7a52df9c
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7a52df9c
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7a52df9c
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@51c62d81
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@51c62d81
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@51c62d81
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@67420940
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@67420940
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6bb22339
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6bb22339
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@2e465cf2
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@2e465cf2
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@36ab683
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@33459a1c
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@4b688389
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@4b688389
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@5f95e589
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5f95e589
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@d4c88aa
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@d4c88aa
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5a170a6b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5a170a6b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@55a3119a
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@55a3119a
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3a24f397
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3a24f397
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4a6eaf83
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4a6eaf83
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@76657463
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@76657463
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1097bd88
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1097bd88
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@3d54a384
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3d54a384
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@390b4bcc
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@390b4bcc
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@3efae691
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3efae691
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3efae691
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6de6f7cd
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@381b1934
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@381b1934
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@381b1934
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6b1d4696
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@4a0223e3
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@67f45ba2
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@67f45ba2
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5559c5ab
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5559c5ab
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@15013c85
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@15013c85
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@f5cb4f8
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@f5cb4f8
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@107072dd
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@107072dd
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@267e52da
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@720ffaed
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@720ffaed
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@720ffaed
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2c6eb29b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2c6eb29b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2c6eb29b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@3608185d
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7e8ff0dc
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5293b007
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5293b007
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5293b007
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2319ecc4
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2319ecc4
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2319ecc4
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1f86afc0
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@47a888b7
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@751bb6ff
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@751bb6ff
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@54a13513
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@19369afb
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@19369afb
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@584fb2ee
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@584fb2ee
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6a4b9305
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7f15af3e
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@6571c5ed
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@f0c3808
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@f0c3808
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@65b7db7b
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@b9573bd
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@128bd0f0
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@44705f9
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5f707a09
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7fd8f2c1
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3398a19a
+2024-10-22 12:05:33 DEBUG BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@f4c02dd
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-10-22 12:05:33 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024-10-22 12:05:34 DEBUG JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 17.0
+      major : 17
+      minor : 0
+2024-10-22 12:05:34 DEBUG JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.7.1
+      major : 42
+      minor : 7
+2024-10-22 12:05:34 DEBUG JdbcEnvironmentInitiator - JDBC version : 4.2
+2024-10-22 12:05:34 INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-10-22 12:05:34 DEBUG IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2024-10-22 12:05:34 DEBUG BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@506fd7ea
+2024-10-22 12:05:34 DEBUG BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@506fd7ea
+2024-10-22 12:05:34 DEBUG BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@107072dd
+2024-10-22 12:05:34 INFO  EnversServiceImpl - Envers integration enabled? : true
+2024-10-22 12:05:34 DEBUG BasicTypeRegistry - Adding type registration org.hibernate.envers.internal.entities.RevisionTypeType -> org.hibernate.type.CustomType@1936633d
+2024-10-22 12:05:34 DEBUG TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5beff5f6] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4e68ad6d]
+2024-10-22 12:05:34 DEBUG Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapping class: com.iot.domain.User -> person
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: userId -> [user_id]
+2024-10-22 12:05:34 DEBUG PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [person]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: username -> [username]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: email -> [email]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: password -> [password]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapping class: com.iot.domain.Device -> device
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: deviceId -> [devices_id]
+2024-10-22 12:05:34 DEBUG PrimaryKey - Forcing column [devices_id] to be non-null as it is part of the primary key for table [device]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: deviceName -> [device_name]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: deviceType -> [device_type]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: license -> [license]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: deviceCode -> [device_code]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: serialNumbers -> [serial_numbers]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: deviceStatus -> [device_status]
+2024-10-22 12:05:34 DEBUG ModelBinder - Mapped property: userId -> [user_id]
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.User] is safe
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.User
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.Device] is safe
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.Device
+2024-10-22 12:05:34 DEBUG SessionFactoryImpl - Building session factory
+2024-10-22 12:05:34 DEBUG Settings - SessionFactory name : null
+2024-10-22 12:05:34 DEBUG Settings - Automatic flush during beforeCompletion(): enabled
+2024-10-22 12:05:34 DEBUG Settings - Automatic session close at end of transaction: disabled
+2024-10-22 12:05:34 DEBUG Settings - Statistics: disabled
+2024-10-22 12:05:34 DEBUG Settings - Deleted entity synthetic identifier rollback: disabled
+2024-10-22 12:05:34 DEBUG Settings - Default entity-mode: pojo
+2024-10-22 12:05:34 DEBUG Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2024-10-22 12:05:34 DEBUG Settings - Allow initialization of lazy state outside session : disabled
+2024-10-22 12:05:34 DEBUG Settings - Using BatchFetchStyle : LEGACY
+2024-10-22 12:05:34 DEBUG Settings - Default batch fetch size: -1
+2024-10-22 12:05:34 DEBUG Settings - Maximum outer join fetch depth: null
+2024-10-22 12:05:34 DEBUG Settings - Default null ordering: NONE
+2024-10-22 12:05:34 DEBUG Settings - Order SQL updates by primary key: disabled
+2024-10-22 12:05:34 DEBUG Settings - Order SQL inserts for batching: disabled
+2024-10-22 12:05:34 DEBUG Settings - multi-tenancy strategy : NONE
+2024-10-22 12:05:34 DEBUG Settings - JTA Track by Thread: enabled
+2024-10-22 12:05:34 DEBUG Settings - Query language substitutions: {}
+2024-10-22 12:05:34 DEBUG Settings - Named query checking : enabled
+2024-10-22 12:05:34 DEBUG Settings - Second-level cache: disabled
+2024-10-22 12:05:34 DEBUG Settings - Second-level query cache: disabled
+2024-10-22 12:05:34 DEBUG Settings - Second-level query cache factory: null
+2024-10-22 12:05:34 DEBUG Settings - Second-level cache region prefix: null
+2024-10-22 12:05:34 DEBUG Settings - Optimize second-level cache for minimal puts: disabled
+2024-10-22 12:05:34 DEBUG Settings - Structured second-level cache entries: disabled
+2024-10-22 12:05:34 DEBUG Settings - Second-level cache direct-reference entries: disabled
+2024-10-22 12:05:34 DEBUG Settings - Automatic eviction of collection cache: disabled
+2024-10-22 12:05:34 DEBUG Settings - JDBC batch size: 15
+2024-10-22 12:05:34 DEBUG Settings - JDBC batch updates for versioned data: enabled
+2024-10-22 12:05:34 DEBUG Settings - Scrollable result sets: enabled
+2024-10-22 12:05:34 DEBUG Settings - Wrap result sets: disabled
+2024-10-22 12:05:34 DEBUG Settings - JDBC3 getGeneratedKeys(): enabled
+2024-10-22 12:05:34 DEBUG Settings - JDBC result set fetch size: null
+2024-10-22 12:05:34 DEBUG Settings - Connection release mode: ON_CLOSE
+2024-10-22 12:05:34 DEBUG Settings - Generate SQL with comments: disabled
+2024-10-22 12:05:34 DEBUG Settings - JPA compliance - query : disabled
+2024-10-22 12:05:34 DEBUG Settings - JPA compliance - closed-handling : disabled
+2024-10-22 12:05:34 DEBUG Settings - JPA compliance - lists : disabled
+2024-10-22 12:05:34 DEBUG Settings - JPA compliance - transactions : disabled
+2024-10-22 12:05:34 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:05:34 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:05:34 DEBUG SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2024-10-22 12:05:34 DEBUG SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@144ade73, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\src;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\resources;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\target\classes;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\target\test-classes;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-user.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-codeserver.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-dev.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\validation-api-1.0.0.GA-sources.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\validation-api-1.0.0.GA.jar;C:\Users\iamsa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\iamsa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\iamsa\.m2\repository\org\liquibase\ext\liquibase-hibernate5\4.25.1\liquibase-hibernate5-4.25.1.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-entitymanager\5.6.15.Final\hibernate-entitymanager-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-envers\5.6.15.Final\hibernate-envers-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\iamsa\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\iamsa\.m2\repository\org\liquibase\liquibase-core\4.25.1\liquibase-core-4.25.1.jar;C:\Users\iamsa\.m2\repository\com\opencsv\opencsv\5.8\opencsv-5.8.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\iamsa\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\iamsa\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\iamsa\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;C:\Users\iamsa\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-core\5.3.23\spring-core-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-jcl\5.3.23\spring-jcl-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-context\5.3.23\spring-context-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-beans\5.3.23\spring-beans-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-expression\5.3.23\spring-expression-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-web\5.3.23\spring-web-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-aop\5.3.23\spring-aop-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-tx\5.3.23\spring-tx-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-orm\5.3.23\spring-orm-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-jdbc\5.3.23\spring-jdbc-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\iamsa\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\iamsa\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\iamsa\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\iamsa\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\iamsa\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\iamsa\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\iamsa\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\iamsa\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\iamsa\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\iamsa\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\iamsa\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\iamsa\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\iamsa\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\iamsa\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\iamsa\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar;C:\Users\iamsa\.m2\repository\com\mchange\mchange-commons-java\0.2.19\mchange-commons-java-0.2.19.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-core\5.6.10\spring-security-core-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-crypto\5.6.10\spring-security-crypto-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-web\5.6.10\spring-security-web-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-config\5.6.10\spring-security-config-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-taglibs\5.6.10\spring-security-taglibs-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-acl\5.6.10\spring-security-acl-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\iamsa\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\iamsa\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\iamsa\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-user\2.9.0\gwt-user-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\jsinterop\jsinterop-annotations\2.0.0\jsinterop-annotations-2.0.0.jar;C:\Users\iamsa\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\iamsa\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA-sources.jar;C:\Users\iamsa\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-dev\2.9.0\gwt-dev-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\iamsa\.m2\repository\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-util\7.1\asm-util-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-tree\7.1\asm-tree-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-analysis\7.1\asm-analysis-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-commons\7.1\asm-commons-7.1.jar;C:\Users\iamsa\.m2\repository\colt\colt\1.2.0\colt-1.2.0.jar;C:\Users\iamsa\.m2\repository\ant\ant\1.6.5\ant-1.6.5.jar;C:\Users\iamsa\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\iamsa\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\iamsa\.m2\repository\com\ibm\icu\icu4j\63.1\icu4j-63.1.jar;C:\Users\iamsa\.m2\repository\tapestry\tapestry\4.0.2\tapestry-4.0.2.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.19\htmlunit-2.19.jar;C:\Users\iamsa\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\iamsa\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\iamsa\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\iamsa\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\iamsa\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;C:\Users\iamsa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.13.v20150730\websocket-client-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.13.v20150730\websocket-common-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.13.v20150730\websocket-api-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-webapp\9.2.14.v20151106\jetty-webapp-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-xml\9.2.14.v20151106\jetty-xml-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-servlet\9.2.14.v20151106\jetty-servlet-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-security\9.2.14.v20151106\jetty-security-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-servlets\9.2.14.v20151106\jetty-servlets-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-continuation\9.2.14.v20151106\jetty-continuation-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-http\9.2.14.v20151106\jetty-http-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-util\9.2.14.v20151106\jetty-util-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-io\9.2.14.v20151106\jetty-io-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-annotations\9.2.14.v20151106\jetty-annotations-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-plus\9.2.14.v20151106\jetty-plus-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-jndi\9.2.14.v20151106\jetty-jndi-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\apache-jsp\9.2.14.v20151106\apache-jsp-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-server\9.2.14.v20151106\jetty-server-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\toolchain\jetty-schemas\3.1.M0\jetty-schemas-3.1.M0.jar;C:\Users\iamsa\.m2\repository\org\mortbay\jasper\apache-jsp\8.0.9.M3\apache-jsp-8.0.9.M3.jar;C:\Users\iamsa\.m2\repository\org\mortbay\jasper\apache-el\8.0.9.M3\apache-el-8.0.9.M3.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-servlet\2.9.0\gwt-servlet-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-codeserver\2.9.0\gwt-codeserver-2.9.0.jar;C:\Users\iamsa\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, org.eclipse.jetty.xml.XmlParser.Validating=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Calcutta, os.name=Windows 10, java.vm.specification.version=1.8, user.country=IN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\bin, sun.java.command=com.google.gwt.dev.DevMode -remoteUI 55648:43374992857500 -startupUrl IoTDeviceManager.html -logLevel INFO -codeServerPort 9997 -port 8888 -war C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\war com.iot.IoTDeviceManager, sun.cpu.endian=little, user.home=C:\Users\iamsa, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\resources.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\rt.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\sunrsasign.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jsse.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jce.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\charsets.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jfr.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\classes, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_211-b12, user.name=iamsa, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=Cp1252, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.classLoaders=[WebAppClassLoader=1082232002@40818cc2], hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\iamsa\AppData\Local\Temp\, java.version=1.8.0_211, user.dir=C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\war, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1a711314, java.library.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/bin/server;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/bin;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/lib/amd64;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\moham\Downloads\protoc-28.2-linux-aarch_64\bin;C:\Users\iamsa\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\iamsa\Downloads\Smash\jdk1.8.0_211 (2)\jdk1.8.0_211 (1)\jdk1.8.0_211\bin;C:\Users\iamsa\AppData\Local\Microsoft\WindowsApps;C:\Users\iamsa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\iamsa\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\iamsa\Downloads\Smash\jdk1.8.0_211 (2)\jdk1.8.0_211 (1)\jdk1.8.0_211\bin;;C:\Users\iamsa\Desktop;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.211-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy@5666baf0, java.ext.dirs=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0, build.compiler=com.google.gwt.dev.shell.jetty.JettyLauncher$JDTCompiler16}
+2024-10-22 12:05:34 DEBUG TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+2024-10-22 12:05:34 DEBUG JaccIntegrator - Skipping JACC integration as it was not enabled
+2024-10-22 12:05:34 DEBUG EnversIntegrator - Skipping Envers listener registrations : No audited entities found
+2024-10-22 12:05:34 DEBUG SessionFactoryImpl - Instantiated session factory
+2024-10-22 12:05:34 DEBUG TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5beff5f6] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@571cb7bc]
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.User] is safe
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.User
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.Device] is safe
+2024-10-22 12:05:34 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.Device
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister - Static SQL for entity: com.iot.domain.User
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Version select: select user_id from person where user_id =?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.username as username2_1_, user_.email as email3_1_, user_.password as password4_1_ from person user_ where user_.user_id=?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Insert 0: insert into person (username, email, password, user_id) values (?, ?, ?, ?)
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Update 0: update person set username=?, email=?, password=? where user_id=?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Delete 0: delete from person where user_id=?
+2024-10-22 12:05:34 DEBUG QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6247c5e8]
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : username
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : email
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : password
+2024-10-22 12:05:34 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2024-10-22 12:05:34 DEBUG LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2024-10-22 12:05:34 DEBUG LoadPlanTreePrinter - LoadPlan(entity=com.iot.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=com.iot.domain.User, querySpaceUid=<gen:0>, path=com.iot.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.iot.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+
+2024-10-22 12:05:34 DEBUG EntityLoader - Static select for entity com.iot.domain.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.username as username2_1_0_, user0_.email as email3_1_0_, user0_.password as password4_1_0_ from person user0_ where user0_.user_id=?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister - Static SQL for entity: com.iot.domain.Device
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Version select: select devices_id from device where devices_id =?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Snapshot select: select device_.devices_id, device_.device_name as device_n2_0_, device_.device_type as device_t3_0_, device_.license as license4_0_, device_.device_code as device_c5_0_, device_.serial_numbers as serial_n6_0_, device_.device_status as device_s7_0_, device_.user_id as user_id8_0_ from device device_ where device_.devices_id=?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Insert 0: insert into device (device_name, device_type, license, device_code, serial_numbers, device_status, user_id, devices_id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Update 0: update device set device_name=?, device_type=?, license=?, device_code=?, serial_numbers=?, device_status=?, user_id=? where devices_id=?
+2024-10-22 12:05:34 DEBUG AbstractEntityPersister -  Delete 0: delete from device where devices_id=?
+2024-10-22 12:05:34 DEBUG QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d51f6f3]
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceName
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceType
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : license
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceCode
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : serialNumbers
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceStatus
+2024-10-22 12:05:34 DEBUG MetamodelGraphWalker - Visiting attribute path : userId
+2024-10-22 12:05:34 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2024-10-22 12:05:34 DEBUG LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2024-10-22 12:05:34 DEBUG LoadPlanTreePrinter - LoadPlan(entity=com.iot.domain.Device)
+    - Returns
+       - EntityReturnImpl(entity=com.iot.domain.Device, querySpaceUid=<gen:0>, path=com.iot.domain.Device)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.iot.domain.Device)
+          - SQL table alias mapping - device0_
+          - alias suffix - 0_
+          - suffixed key columns - {devices_1_0_0_}
+
+2024-10-22 12:05:34 DEBUG EntityLoader - Static select for entity com.iot.domain.Device [NONE]: select device0_.devices_id as devices_1_0_0_, device0_.device_name as device_n2_0_0_, device0_.device_type as device_t3_0_0_, device0_.license as license4_0_0_, device0_.device_code as device_c5_0_0_, device0_.serial_numbers as serial_n6_0_0_, device0_.device_status as device_s7_0_0_, device0_.user_id as user_id8_0_0_ from device device0_ where device0_.devices_id=?
+2024-10-22 12:05:34 DEBUG SchemaManagementToolCoordinator - No schema actions specified
+2024-10-22 12:05:34 DEBUG SchemaManagementToolCoordinator - No actions specified; doing nothing
+2024-10-22 12:05:34 DEBUG JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2024-10-22 12:05:34 DEBUG JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2024-10-22 12:05:34 DEBUG StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-22 12:05:34 INFO  JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-22 12:05:34 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:05:34 DEBUG QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@cb5840f
+2024-10-22 12:05:34 DEBUG NamedQueryRepository - Checking 0 named HQL queries
+2024-10-22 12:05:34 DEBUG NamedQueryRepository - Checking 0 named SQL queries
+2024-10-22 12:05:34 DEBUG SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4f092b49
+2024-10-22 12:05:34 DEBUG SessionFactoryRegistry - Registering SessionFactory: 765a0d51-fc83-489e-80a0-97bb90386408 (<unnamed>)
+2024-10-22 12:05:34 DEBUG SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2024-10-22 12:05:34 INFO  ApplicationContextListner - Application context refreshed: Root WebApplicationContext
+2024-10-22 12:08:11 DEBUG logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2024-10-22 12:08:11 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-10-22 12:08:11 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-10-22 12:08:11 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-10-22 12:08:11 DEBUG IntegratorServiceImpl - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator].
+2024-10-22 12:08:11 INFO  Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-10-22 12:08:11 DEBUG Environment - HHH000206: hibernate.properties not found
+2024-10-22 12:08:11 DEBUG LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2024-10-22 12:08:11 WARN  deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-10-22 12:08:11 DEBUG LocalXmlResourceResolver - Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2024-10-22 12:08:11 DEBUG MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2024-10-22 12:08:11 DEBUG LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+2024-10-22 12:08:11 WARN  deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-10-22 12:08:11 DEBUG LocalXmlResourceResolver - Recognized legacy hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+2024-10-22 12:08:11 DEBUG MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=null,type=INPUT_STREAM)
+2024-10-22 12:08:11 DEBUG Configuration - Building session factory using internal StandardServiceRegistryBuilder
+2024-10-22 12:08:11 DEBUG ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2024-10-22 12:08:11 DEBUG Configuration - Building session factory using provided StandardServiceRegistry
+2024-10-22 12:08:11 DEBUG RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-10-22 12:08:11 DEBUG RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024-10-22 12:08:11 INFO  Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1b4769be
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1b4769be
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1b4769be
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6a0261d5
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@513f7153
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@713ad3
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@322a4779
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@322a4779
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@322a4779
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@59529ee
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@59529ee
+2024-10-22 12:08:11 DEBUG BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@59529ee
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2602743
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@2602743
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2602743
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@47cbe861
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@47cbe861
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@47cbe861
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@69249afe
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@69249afe
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@69249afe
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7c6edd94
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7c6edd94
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7c6edd94
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3f0cc2d9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3f0cc2d9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3f0cc2d9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@77b8b32e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@77b8b32e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@68c40f39
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@68c40f39
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@71eab4a9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@71eab4a9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@73021fe7
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@da4978f
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@3bde931c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3bde931c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1748a0de
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1748a0de
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4b7f66b3
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4b7f66b3
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@776c1e9f
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@776c1e9f
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3cfbd27c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3cfbd27c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7f91ef72
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7f91ef72
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f6bf880
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f6bf880
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@7f435bd2
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@7f435bd2
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@34a4ab99
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@34a4ab99
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@653ccd37
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@653ccd37
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@adeaf5e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@adeaf5e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@51dc0bd7
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@51dc0bd7
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@51dc0bd7
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2c553468
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@be1e3e9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@be1e3e9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@be1e3e9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2e31b6bb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@52bfd701
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7e7073fb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7e7073fb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@6d2c516e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6d2c516e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6af6dfb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6af6dfb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@bc5f1a4
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@bc5f1a4
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4981c2d3
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4981c2d3
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@327df687
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@56b0059c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@56b0059c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@56b0059c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@54befc19
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@54befc19
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@54befc19
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6b4ffcd8
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@22150412
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@59d3dfe9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@59d3dfe9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@59d3dfe9
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@406fbe6d
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@406fbe6d
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@406fbe6d
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@642d5b9a
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@31e33f4e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@35ec8a10
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@35ec8a10
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@77735cdf
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@16b01c9f
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@16b01c9f
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@79b9577b
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@79b9577b
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@51a4d6d1
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2223b630
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@4fe8d279
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@54345067
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@54345067
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3b54b936
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4d956153
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@22ac0771
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@88ec1fb
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@168d44d5
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@70f420ae
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3221264e
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4c5ea8e8
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-10-22 12:08:12 DEBUG DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024-10-22 12:08:12 DEBUG JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 17.0
+      major : 17
+      minor : 0
+2024-10-22 12:08:12 DEBUG JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.7.1
+      major : 42
+      minor : 7
+2024-10-22 12:08:12 DEBUG JdbcEnvironmentInitiator - JDBC version : 4.2
+2024-10-22 12:08:12 INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-10-22 12:08:12 DEBUG IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@8f2fa2c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@8f2fa2c
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4981c2d3
+2024-10-22 12:08:12 INFO  EnversServiceImpl - Envers integration enabled? : true
+2024-10-22 12:08:12 DEBUG BasicTypeRegistry - Adding type registration org.hibernate.envers.internal.entities.RevisionTypeType -> org.hibernate.type.CustomType@13132e66
+2024-10-22 12:08:12 DEBUG TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@329ed1f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1d3888b0]
+2024-10-22 12:08:12 DEBUG Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapping class: com.iot.domain.User -> person
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: userId -> [user_id]
+2024-10-22 12:08:12 DEBUG PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [person]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: username -> [username]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: email -> [email]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: password -> [password]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapping class: com.iot.domain.Device -> device
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: deviceId -> [devices_id]
+2024-10-22 12:08:12 DEBUG PrimaryKey - Forcing column [devices_id] to be non-null as it is part of the primary key for table [device]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: deviceName -> [device_name]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: deviceType -> [device_type]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: license -> [license]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: deviceCode -> [device_code]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: serialNumbers -> [serial_numbers]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: deviceStatus -> [device_status]
+2024-10-22 12:08:12 DEBUG ModelBinder - Mapped property: userId -> [user_id]
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.User] is safe
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.User
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.Device] is safe
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.Device
+2024-10-22 12:08:12 DEBUG SessionFactoryImpl - Building session factory
+2024-10-22 12:08:12 DEBUG Settings - SessionFactory name : null
+2024-10-22 12:08:12 DEBUG Settings - Automatic flush during beforeCompletion(): enabled
+2024-10-22 12:08:12 DEBUG Settings - Automatic session close at end of transaction: disabled
+2024-10-22 12:08:12 DEBUG Settings - Statistics: disabled
+2024-10-22 12:08:12 DEBUG Settings - Deleted entity synthetic identifier rollback: disabled
+2024-10-22 12:08:12 DEBUG Settings - Default entity-mode: pojo
+2024-10-22 12:08:12 DEBUG Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2024-10-22 12:08:12 DEBUG Settings - Allow initialization of lazy state outside session : disabled
+2024-10-22 12:08:12 DEBUG Settings - Using BatchFetchStyle : LEGACY
+2024-10-22 12:08:12 DEBUG Settings - Default batch fetch size: -1
+2024-10-22 12:08:12 DEBUG Settings - Maximum outer join fetch depth: null
+2024-10-22 12:08:12 DEBUG Settings - Default null ordering: NONE
+2024-10-22 12:08:12 DEBUG Settings - Order SQL updates by primary key: disabled
+2024-10-22 12:08:12 DEBUG Settings - Order SQL inserts for batching: disabled
+2024-10-22 12:08:12 DEBUG Settings - multi-tenancy strategy : NONE
+2024-10-22 12:08:12 DEBUG Settings - JTA Track by Thread: enabled
+2024-10-22 12:08:12 DEBUG Settings - Query language substitutions: {}
+2024-10-22 12:08:12 DEBUG Settings - Named query checking : enabled
+2024-10-22 12:08:12 DEBUG Settings - Second-level cache: disabled
+2024-10-22 12:08:12 DEBUG Settings - Second-level query cache: disabled
+2024-10-22 12:08:12 DEBUG Settings - Second-level query cache factory: null
+2024-10-22 12:08:12 DEBUG Settings - Second-level cache region prefix: null
+2024-10-22 12:08:12 DEBUG Settings - Optimize second-level cache for minimal puts: disabled
+2024-10-22 12:08:12 DEBUG Settings - Structured second-level cache entries: disabled
+2024-10-22 12:08:12 DEBUG Settings - Second-level cache direct-reference entries: disabled
+2024-10-22 12:08:12 DEBUG Settings - Automatic eviction of collection cache: disabled
+2024-10-22 12:08:12 DEBUG Settings - JDBC batch size: 15
+2024-10-22 12:08:12 DEBUG Settings - JDBC batch updates for versioned data: enabled
+2024-10-22 12:08:12 DEBUG Settings - Scrollable result sets: enabled
+2024-10-22 12:08:12 DEBUG Settings - Wrap result sets: disabled
+2024-10-22 12:08:12 DEBUG Settings - JDBC3 getGeneratedKeys(): enabled
+2024-10-22 12:08:12 DEBUG Settings - JDBC result set fetch size: null
+2024-10-22 12:08:12 DEBUG Settings - Connection release mode: ON_CLOSE
+2024-10-22 12:08:12 DEBUG Settings - Generate SQL with comments: disabled
+2024-10-22 12:08:12 DEBUG Settings - JPA compliance - query : disabled
+2024-10-22 12:08:12 DEBUG Settings - JPA compliance - closed-handling : disabled
+2024-10-22 12:08:12 DEBUG Settings - JPA compliance - lists : disabled
+2024-10-22 12:08:12 DEBUG Settings - JPA compliance - transactions : disabled
+2024-10-22 12:08:12 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:08:12 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:08:12 DEBUG SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2024-10-22 12:08:12 DEBUG SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@52eac391, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\src;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\resources;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\target\classes;C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\target\test-classes;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-user.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-codeserver.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\gwt-dev.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\validation-api-1.0.0.GA-sources.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\plugins\com.google.gwt.eclipse.sdkbundle_2.7.0\gwt-2.7.0\validation-api-1.0.0.GA.jar;C:\Users\iamsa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\iamsa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\iamsa\.m2\repository\org\liquibase\ext\liquibase-hibernate5\4.25.1\liquibase-hibernate5-4.25.1.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-entitymanager\5.6.15.Final\hibernate-entitymanager-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-envers\5.6.15.Final\hibernate-envers-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\iamsa\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\iamsa\.m2\repository\org\liquibase\liquibase-core\4.25.1\liquibase-core-4.25.1.jar;C:\Users\iamsa\.m2\repository\com\opencsv\opencsv\5.8\opencsv-5.8.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\iamsa\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\iamsa\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\iamsa\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\iamsa\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;C:\Users\iamsa\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-core\5.3.23\spring-core-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-jcl\5.3.23\spring-jcl-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-context\5.3.23\spring-context-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-beans\5.3.23\spring-beans-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-expression\5.3.23\spring-expression-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-web\5.3.23\spring-web-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-aop\5.3.23\spring-aop-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-tx\5.3.23\spring-tx-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-orm\5.3.23\spring-orm-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\springframework\spring-jdbc\5.3.23\spring-jdbc-5.3.23.jar;C:\Users\iamsa\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\iamsa\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\iamsa\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\iamsa\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\iamsa\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\iamsa\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\iamsa\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\iamsa\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\iamsa\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\iamsa\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\iamsa\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\iamsa\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\iamsa\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\iamsa\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\iamsa\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\iamsa\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\iamsa\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\iamsa\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar;C:\Users\iamsa\.m2\repository\com\mchange\mchange-commons-java\0.2.19\mchange-commons-java-0.2.19.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-core\5.6.10\spring-security-core-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-crypto\5.6.10\spring-security-crypto-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-web\5.6.10\spring-security-web-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-config\5.6.10\spring-security-config-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-taglibs\5.6.10\spring-security-taglibs-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\springframework\security\spring-security-acl\5.6.10\spring-security-acl-5.6.10.jar;C:\Users\iamsa\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\iamsa\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\iamsa\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\iamsa\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-user\2.9.0\gwt-user-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\jsinterop\jsinterop-annotations\2.0.0\jsinterop-annotations-2.0.0.jar;C:\Users\iamsa\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\iamsa\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA-sources.jar;C:\Users\iamsa\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-dev\2.9.0\gwt-dev-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\iamsa\.m2\repository\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-util\7.1\asm-util-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-tree\7.1\asm-tree-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-analysis\7.1\asm-analysis-7.1.jar;C:\Users\iamsa\.m2\repository\org\ow2\asm\asm-commons\7.1\asm-commons-7.1.jar;C:\Users\iamsa\.m2\repository\colt\colt\1.2.0\colt-1.2.0.jar;C:\Users\iamsa\.m2\repository\ant\ant\1.6.5\ant-1.6.5.jar;C:\Users\iamsa\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\iamsa\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\iamsa\.m2\repository\com\ibm\icu\icu4j\63.1\icu4j-63.1.jar;C:\Users\iamsa\.m2\repository\tapestry\tapestry\4.0.2\tapestry-4.0.2.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.19\htmlunit-2.19.jar;C:\Users\iamsa\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\iamsa\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\iamsa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\iamsa\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\iamsa\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\iamsa\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\iamsa\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.18\cssparser-0.9.18.jar;C:\Users\iamsa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.13.v20150730\websocket-client-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.13.v20150730\websocket-common-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.13.v20150730\websocket-api-9.2.13.v20150730.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-webapp\9.2.14.v20151106\jetty-webapp-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-xml\9.2.14.v20151106\jetty-xml-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-servlet\9.2.14.v20151106\jetty-servlet-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-security\9.2.14.v20151106\jetty-security-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-servlets\9.2.14.v20151106\jetty-servlets-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-continuation\9.2.14.v20151106\jetty-continuation-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-http\9.2.14.v20151106\jetty-http-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-util\9.2.14.v20151106\jetty-util-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-io\9.2.14.v20151106\jetty-io-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-annotations\9.2.14.v20151106\jetty-annotations-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-plus\9.2.14.v20151106\jetty-plus-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-jndi\9.2.14.v20151106\jetty-jndi-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\apache-jsp\9.2.14.v20151106\apache-jsp-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\jetty-server\9.2.14.v20151106\jetty-server-9.2.14.v20151106.jar;C:\Users\iamsa\.m2\repository\org\eclipse\jetty\toolchain\jetty-schemas\3.1.M0\jetty-schemas-3.1.M0.jar;C:\Users\iamsa\.m2\repository\org\mortbay\jasper\apache-jsp\8.0.9.M3\apache-jsp-8.0.9.M3.jar;C:\Users\iamsa\.m2\repository\org\mortbay\jasper\apache-el\8.0.9.M3\apache-el-8.0.9.M3.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-servlet\2.9.0\gwt-servlet-2.9.0.jar;C:\Users\iamsa\.m2\repository\com\google\gwt\gwt-codeserver\2.9.0\gwt-codeserver-2.9.0.jar;C:\Users\iamsa\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, org.eclipse.jetty.xml.XmlParser.Validating=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Calcutta, os.name=Windows 10, java.vm.specification.version=1.8, user.country=IN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\bin, sun.java.command=com.google.gwt.dev.DevMode -remoteUI 55648:43534094054100 -startupUrl IoTDeviceManager.html -logLevel INFO -codeServerPort 9997 -port 8888 -war C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\war com.iot.IoTDeviceManager, sun.cpu.endian=little, user.home=C:\Users\iamsa, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\resources.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\rt.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\sunrsasign.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jsse.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jce.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\charsets.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\jfr.jar;C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\classes, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_211-b12, user.name=iamsa, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=Cp1252, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.classLoaders=[WebAppClassLoader=857863655@3321f5e7], hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\iamsa\AppData\Local\Temp\, java.version=1.8.0_211, user.dir=C:\Users\iamsa\Desktop\IoT\IoTDeviceManager\war, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@7179f9bd, java.library.path=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/bin/server;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/bin;C:/Users/iamsa/Downloads/Smash/eclipse (1)/eclipse/jre/lib/amd64;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\moham\Downloads\protoc-28.2-linux-aarch_64\bin;C:\Users\iamsa\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\iamsa\Downloads\Smash\jdk1.8.0_211 (2)\jdk1.8.0_211 (1)\jdk1.8.0_211\bin;C:\Users\iamsa\AppData\Local\Microsoft\WindowsApps;C:\Users\iamsa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\iamsa\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\iamsa\Downloads\Smash\jdk1.8.0_211 (2)\jdk1.8.0_211 (1)\jdk1.8.0_211\bin;;C:\Users\iamsa\Desktop;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.211-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy@22e6a0e2, java.ext.dirs=C:\Users\iamsa\Downloads\Smash\eclipse (1)\eclipse\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, java.class.version=52.0, build.compiler=com.google.gwt.dev.shell.jetty.JettyLauncher$JDTCompiler16}
+2024-10-22 12:08:12 DEBUG TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+2024-10-22 12:08:12 DEBUG JaccIntegrator - Skipping JACC integration as it was not enabled
+2024-10-22 12:08:12 DEBUG EnversIntegrator - Skipping Envers listener registrations : No audited entities found
+2024-10-22 12:08:12 DEBUG SessionFactoryImpl - Instantiated session factory
+2024-10-22 12:08:12 DEBUG TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@329ed1f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@45c3c0ad]
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.User] is safe
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.User
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - Not known whether passed class name [com.iot.domain.Device] is safe
+2024-10-22 12:08:12 DEBUG ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.iot.domain.Device
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister - Static SQL for entity: com.iot.domain.User
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Version select: select user_id from person where user_id =?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.username as username2_1_, user_.email as email3_1_, user_.password as password4_1_ from person user_ where user_.user_id=?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Insert 0: insert into person (username, email, password, user_id) values (?, ?, ?, ?)
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Update 0: update person set username=?, email=?, password=? where user_id=?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Delete 0: delete from person where user_id=?
+2024-10-22 12:08:12 DEBUG QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3215df08]
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : username
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : email
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : password
+2024-10-22 12:08:12 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2024-10-22 12:08:12 DEBUG LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2024-10-22 12:08:12 DEBUG LoadPlanTreePrinter - LoadPlan(entity=com.iot.domain.User)
+    - Returns
+       - EntityReturnImpl(entity=com.iot.domain.User, querySpaceUid=<gen:0>, path=com.iot.domain.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.iot.domain.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+
+2024-10-22 12:08:12 DEBUG EntityLoader - Static select for entity com.iot.domain.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.username as username2_1_0_, user0_.email as email3_1_0_, user0_.password as password4_1_0_ from person user0_ where user0_.user_id=?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister - Static SQL for entity: com.iot.domain.Device
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Version select: select devices_id from device where devices_id =?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Snapshot select: select device_.devices_id, device_.device_name as device_n2_0_, device_.device_type as device_t3_0_, device_.license as license4_0_, device_.device_code as device_c5_0_, device_.serial_numbers as serial_n6_0_, device_.device_status as device_s7_0_, device_.user_id as user_id8_0_ from device device_ where device_.devices_id=?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Insert 0: insert into device (device_name, device_type, license, device_code, serial_numbers, device_status, user_id, devices_id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Update 0: update device set device_name=?, device_type=?, license=?, device_code=?, serial_numbers=?, device_status=?, user_id=? where devices_id=?
+2024-10-22 12:08:12 DEBUG AbstractEntityPersister -  Delete 0: delete from device where devices_id=?
+2024-10-22 12:08:12 DEBUG QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3196000e]
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceName
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceType
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : license
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceCode
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : serialNumbers
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : deviceStatus
+2024-10-22 12:08:12 DEBUG MetamodelGraphWalker - Visiting attribute path : userId
+2024-10-22 12:08:12 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2024-10-22 12:08:12 DEBUG LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2024-10-22 12:08:12 DEBUG LoadPlanTreePrinter - LoadPlan(entity=com.iot.domain.Device)
+    - Returns
+       - EntityReturnImpl(entity=com.iot.domain.Device, querySpaceUid=<gen:0>, path=com.iot.domain.Device)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.iot.domain.Device)
+          - SQL table alias mapping - device0_
+          - alias suffix - 0_
+          - suffixed key columns - {devices_1_0_0_}
+
+2024-10-22 12:08:12 DEBUG EntityLoader - Static select for entity com.iot.domain.Device [NONE]: select device0_.devices_id as devices_1_0_0_, device0_.device_name as device_n2_0_0_, device0_.device_type as device_t3_0_0_, device0_.license as license4_0_0_, device0_.device_code as device_c5_0_0_, device0_.serial_numbers as serial_n6_0_0_, device0_.device_status as device_s7_0_0_, device0_.user_id as user_id8_0_0_ from device device0_ where device0_.devices_id=?
+2024-10-22 12:08:12 DEBUG SchemaManagementToolCoordinator - No schema actions specified
+2024-10-22 12:08:12 DEBUG SchemaManagementToolCoordinator - No actions specified; doing nothing
+2024-10-22 12:08:12 DEBUG JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2024-10-22 12:08:12 DEBUG JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2024-10-22 12:08:12 DEBUG StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-22 12:08:12 INFO  JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-22 12:08:12 DEBUG SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-10-22 12:08:12 DEBUG QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7553c3d3
+2024-10-22 12:08:12 DEBUG NamedQueryRepository - Checking 0 named HQL queries
+2024-10-22 12:08:12 DEBUG NamedQueryRepository - Checking 0 named SQL queries
+2024-10-22 12:08:12 DEBUG SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@16b9082a
+2024-10-22 12:08:12 DEBUG SessionFactoryRegistry - Registering SessionFactory: aade0539-e2e0-45da-a7f1-96eb4d862d73 (<unnamed>)
+2024-10-22 12:08:12 DEBUG SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2024-10-22 12:08:13 INFO  ApplicationContextListner - Application context refreshed: Root WebApplicationContext
+2024-10-22 12:17:35 DEBUG StatisticsInitiator - Statistics initialized [enabled=false]
+2024-10-22 12:17:35 DEBUG TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-10-22 12:17:35 DEBUG TransactionImpl - begin
+2024-10-22 12:17:35 DEBUG QueryTranslatorImpl - parse() - HQL: FROM com.iot.domain.User WHERE username = :username
+2024-10-22 12:17:35 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:35 DEBUG QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'FROM'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[IDENT] Node: 'com'
+    |           |  |  \-[IDENT] Node: 'iot'
+    |           |  \-[IDENT] Node: 'domain'
+    |           \-[IDENT] Node: 'User'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'username'
+
+2024-10-22 12:17:35 DEBUG HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2024-10-22 12:17:35 DEBUG FromElement - FromClause{level=1} : com.iot.domain.User (<no alias>) -> user0_
+2024-10-22 12:17:35 DEBUG FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+2024-10-22 12:17:35 DEBUG DotNode - getDataType() : username -> org.hibernate.type.StringType@71eab4a9
+2024-10-22 12:17:35 DEBUG FromReferenceNode - Resolved : {synthetic-alias}.username -> user0_.username
+2024-10-22 12:17:35 DEBUG HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2024-10-22 12:17:35 DEBUG HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} person user0_ ) ( WHERE ( = ( user0_.username {synthetic-alias} username ) ? ) ) )
+2024-10-22 12:17:35 DEBUG HqlSqlWalker - Derived SELECT clause created.
+2024-10-22 12:17:35 DEBUG JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity User): [person]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(com.iot.domain.User)
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(com.iot.domain.User)
+          | path: {synthetic-alias}.username
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(com.iot.domain.User)
+          |  | originalText: {synthetic-alias}
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: username
+          \-ParameterNode
+
+2024-10-22 12:17:35 DEBUG JoinProcessor - Using FROM fragment [person user0_]
+2024-10-22 12:17:35 DEBUG HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2024-10-22 12:17:35 DEBUG QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (person)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'user0_.user_id as user_id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=person,tableAlias=user0_,origin=null,columns={,className=com.iot.domain.User}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.username as username2_1_, user0_.email as email3_1_, user0_.password as password4_1_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'person user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=person,tableAlias=user0_,origin=null,columns={,className=com.iot.domain.User}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path={synthetic-alias}.username,tableAlias=user0_,className=com.iot.domain.User,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=username, expectedType=org.hibernate.type.StringType@71eab4a9}
+
+2024-10-22 12:17:35 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:35 DEBUG QueryTranslatorImpl - HQL: FROM com.iot.domain.User WHERE username = :username
+2024-10-22 12:17:35 DEBUG QueryTranslatorImpl - SQL: select user0_.user_id as user_id1_1_, user0_.username as username2_1_, user0_.email as email3_1_, user0_.password as password4_1_ from person user0_ where user0_.username=?
+2024-10-22 12:17:35 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:35 DEBUG SQL - select user0_.user_id as user_id1_1_, user0_.username as username2_1_, user0_.email as email3_1_, user0_.password as password4_1_ from person user0_ where user0_.username=?
+2024-10-22 12:17:36 DEBUG Loader - Result set row: 0
+2024-10-22 12:17:36 DEBUG Loader - Result row: EntityKey[com.iot.domain.User#124]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Resolving attributes for [com.iot.domain.User#124]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `username` : value = a
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `email` : value = a
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `password` : value = a
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Done materializing entity [com.iot.domain.User#124]
+2024-10-22 12:17:36 DEBUG TransactionImpl - committing
+2024-10-22 12:17:36 DEBUG AbstractFlushingEventListener - Processing flush-time cascades
+2024-10-22 12:17:36 DEBUG AbstractFlushingEventListener - Dirty checking collections
+2024-10-22 12:17:36 DEBUG AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2024-10-22 12:17:36 DEBUG AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2024-10-22 12:17:36 DEBUG EntityPrinter - Listing entities:
+2024-10-22 12:17:36 DEBUG EntityPrinter - com.iot.domain.User{password=a, userId=124, email=a, username=a}
+2024-10-22 12:17:36 INFO  AuthServiceImpl - User authenticated successfully: a
+2024-10-22 12:17:36 INFO  AuthServiceImpl - Current user retrieved: a
+2024-10-22 12:17:36 INFO  DeviceServiceImpl - DeviceServiceImpl initialized with deviceDao: com.iot.daoImpl.DeviceDaoImpl@6052b495
+2024-10-22 12:17:36 INFO  DeviceServiceImpl - Fetching devices for user ID: 124
+2024-10-22 12:17:36 DEBUG TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-10-22 12:17:36 DEBUG TransactionImpl - begin
+2024-10-22 12:17:36 DEBUG QueryTranslatorImpl - parse() - HQL: FROM com.iot.domain.Device d WHERE d.userId = :userId
+2024-10-22 12:17:36 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:36 DEBUG QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'FROM'
+    |     \-[RANGE] Node: 'RANGE'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[DOT] Node: '.'
+    |        |  |  |  +-[IDENT] Node: 'com'
+    |        |  |  |  \-[IDENT] Node: 'iot'
+    |        |  |  \-[IDENT] Node: 'domain'
+    |        |  \-[IDENT] Node: 'Device'
+    |        \-[ALIAS] Node: 'd'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'd'
+          |  \-[IDENT] Node: 'userId'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'userId'
+
+2024-10-22 12:17:36 DEBUG HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2024-10-22 12:17:36 DEBUG FromElement - FromClause{level=1} : com.iot.domain.Device (d) -> device0_
+2024-10-22 12:17:36 DEBUG FromReferenceNode - Resolved : d -> device0_.devices_id
+2024-10-22 12:17:36 DEBUG DotNode - getDataType() : userId -> org.hibernate.type.LongType@69249afe
+2024-10-22 12:17:36 DEBUG FromReferenceNode - Resolved : d.userId -> device0_.user_id
+2024-10-22 12:17:36 DEBUG HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2024-10-22 12:17:36 DEBUG HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} device device0_ ) ( WHERE ( = ( device0_.user_id device0_.devices_id userId ) ? ) ) )
+2024-10-22 12:17:36 DEBUG HqlSqlWalker - Derived SELECT clause created.
+2024-10-22 12:17:36 DEBUG JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Device): [device]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(com.iot.domain.Device)
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(com.iot.domain.Device)
+          | path: d.userId
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(com.iot.domain.Device)
+          |  | originalText: d
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: userId
+          \-ParameterNode
+
+2024-10-22 12:17:36 DEBUG JoinProcessor - Using FROM fragment [device device0_]
+2024-10-22 12:17:36 DEBUG HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2024-10-22 12:17:36 DEBUG QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (device)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'device0_.devices_id as devices_1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=d,role=null,tableName=device,tableAlias=device0_,origin=null,columns={,className=com.iot.domain.Device}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'device0_.device_name as device_n2_0_, device0_.device_type as device_t3_0_, device0_.license as license4_0_, device0_.device_code as device_c5_0_, device0_.serial_numbers as serial_n6_0_, device0_.device_status as device_s7_0_, device0_.user_id as user_id8_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[d], fromElementByTableAlias=[device0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'device device0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=d,role=null,tableName=device,tableAlias=device0_,origin=null,columns={,className=com.iot.domain.Device}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'device0_.user_id' {propertyName=userId,dereferenceType=PRIMITIVE,getPropertyPath=userId,path=d.userId,tableAlias=device0_,className=com.iot.domain.Device,classAlias=d}
+          |  +-[ALIAS_REF] IdentNode: 'device0_.devices_id' {alias=d, className=com.iot.domain.Device, tableAlias=device0_}
+          |  \-[IDENT] IdentNode: 'userId' {originalText=userId}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=userId, expectedType=org.hibernate.type.LongType@69249afe}
+
+2024-10-22 12:17:36 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:36 DEBUG QueryTranslatorImpl - HQL: FROM com.iot.domain.Device d WHERE d.userId = :userId
+2024-10-22 12:17:36 DEBUG QueryTranslatorImpl - SQL: select device0_.devices_id as devices_1_0_, device0_.device_name as device_n2_0_, device0_.device_type as device_t3_0_, device0_.license as license4_0_, device0_.device_code as device_c5_0_, device0_.serial_numbers as serial_n6_0_, device0_.device_status as device_s7_0_, device0_.user_id as user_id8_0_ from device device0_ where device0_.user_id=?
+2024-10-22 12:17:36 DEBUG ErrorTracker - throwQueryException() : no errors
+2024-10-22 12:17:36 DEBUG SQL - select device0_.devices_id as devices_1_0_, device0_.device_name as device_n2_0_, device0_.device_type as device_t3_0_, device0_.license as license4_0_, device0_.device_code as device_c5_0_, device0_.serial_numbers as serial_n6_0_, device0_.device_status as device_s7_0_, device0_.user_id as user_id8_0_ from device device0_ where device0_.user_id=?
+2024-10-22 12:17:36 DEBUG Loader - Result set row: 0
+2024-10-22 12:17:36 DEBUG Loader - Result row: EntityKey[com.iot.domain.Device#125]
+2024-10-22 12:17:36 DEBUG Loader - Result set row: 1
+2024-10-22 12:17:36 DEBUG Loader - Result row: EntityKey[com.iot.domain.Device#130]
+2024-10-22 12:17:36 DEBUG Loader - Result set row: 2
+2024-10-22 12:17:36 DEBUG Loader - Result row: EntityKey[com.iot.domain.Device#131]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Resolving attributes for [com.iot.domain.Device#125]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceName` : value = Old Device
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceName`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceType` : value = Master Gateway
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceType`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `license` : value = P2/9SFWE86CK3MAAXRA
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`license`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceCode` : value = Device Code
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceCode`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `serialNumbers` : value = 123
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`serialNumbers`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceStatus` : value = Online
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceStatus`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `userId` : value = 124
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Done materializing entity [com.iot.domain.Device#125]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Resolving attributes for [com.iot.domain.Device#130]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceName` : value = dafs
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceName`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceType` : value = Master Gateway
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceType`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `license` : value = P2/QFC4JSC1RFCO9T22
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`license`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceCode` : value = ads
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceCode`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `serialNumbers` : value = adf
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`serialNumbers`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceStatus` : value = Active
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceStatus`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `userId` : value = 124
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Done materializing entity [com.iot.domain.Device#130]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Resolving attributes for [com.iot.domain.Device#131]
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceName` : value = adf
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceName`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceType` : value = Passthrough Gateway Real Time (2.4GHz)
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceType`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `license` : value = P2/QFC4JSC1RFCO9T22
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`license`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceCode` : value = ad
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceCode`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `serialNumbers` : value = adf
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`serialNumbers`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `deviceStatus` : value = Active
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`deviceStatus`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Processing attribute `userId` : value = 124
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+2024-10-22 12:17:36 DEBUG TwoPhaseLoad - Done materializing entity [com.iot.domain.Device#131]
+2024-10-22 12:17:36 DEBUG TransactionImpl - committing
+2024-10-22 12:17:36 INFO  DeviceServiceImpl - Devices fetched: [com.iot.domain.Device@3fbd6107, com.iot.domain.Device@3224355d, com.iot.domain.Device@4259923]

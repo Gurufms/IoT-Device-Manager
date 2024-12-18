@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+		 <logger name="org.springframework.security" level="DEBUG"/>
+    <!-- Root logger -->
+    <root>
+    <level value="WARN" />
+     <level value="INFO" />
+    <appender-ref ref="consoleAppender" />
+    <appender-ref ref="fileAppender" />
+</root>
+
+    <!-- Console appender -->
+   <!-- Console appender -->
+<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n" />
+    </layout>
+</appender>
+    
+    <!-- File appender -->
+    <appender name="fileAppender" class="org.apache.log4j.FileAppender">
+        <param name="File" value="resources/application.log" /> 
+        <param name="Append" value="true" /> <!-- Append to the file -->
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n" />
+        </layout>
+    </appender>
+
+</log4j:configuration>

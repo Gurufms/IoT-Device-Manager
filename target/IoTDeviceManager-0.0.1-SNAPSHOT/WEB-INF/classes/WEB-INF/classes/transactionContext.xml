@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+       ">
+
+    <!-- Transaction Manager   IoTDeviceManager/target/classes -->
+    <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="txAttributes"
+        class="org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource">
+        <property name="properties">
+            <value>
+                *=PROPAGATION_REQUIRED
+            </value>
+        </property>
+    </bean>
+
+   <tx:advice id="defaultTxAdvice" transaction-manager="txManager">
+    <tx:attributes>
+        <tx:method name="get*" read-only="true" propagation="REQUIRED"/>
+        <tx:method name="add*" propagation="REQUIRED"/>
+        <tx:method name="save*" propagation="REQUIRED"/>
+        <tx:method name="update*" propagation="REQUIRED"/>
+        <tx:method name="delete*" propagation="REQUIRED"/>
+        <tx:method name="fetch*" propagation="REQUIRED"/>
+        <tx:method name="*" propagation="REQUIRED"/>
+    </tx:attributes>
+</tx:advice>
+
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="daoMethods" expression="execution(* com.iot.daoImpl.*.*(..))"/>
+        <aop:advisor advice-ref="defaultTxAdvice" pointcut-ref="daoMethods"/>
+    </aop:config>
+</beans>

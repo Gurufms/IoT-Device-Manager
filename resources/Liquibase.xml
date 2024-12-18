@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+        http://www.liquibase.org/xml/ns/pro 
+        http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+<!-- ***************************************table 1*********************************** -->
+    <changeSet id="1" author="sayeed">
+    <createTable tableName="person">
+        <column name="user_id" type="int">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="username" type="varchar(255)"/>
+        <column name="email" type="varchar(255)"/>
+        <column name="password" type="varchar(255)"/>
+    </createTable>
+    <!-- ***************************************table 2*********************************** -->
+</changeSet>
+	<changeSet id="2" author="sayeed">
+    <createTable tableName="category">
+        
+        <column name="category_id" type="int">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="category_name" type="varchar(255)"/>        
+    </createTable>
+</changeSet>
+<!-- ***************************************table 3*********************************** -->
+<changeSet id="3" author="sayeed">
+    <createTable tableName="lookup">
+        <column name="lookup_id" type="int">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="category_id" type="int">
+            <constraints foreignKeyName="FK_LOOKUP_CATEGORY" references="category(category_id)"/>
+        </column>
+        <column name="name" type="varchar(255)"/>
+    </createTable>
+</changeSet>
+<!-- ***************************************table 4*********************************** -->
+<changeSet id="4" author="sayeed">
+    <createTable tableName="device">
+        <column name="device_id" type="int">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="user_id" type="int">
+            <constraints foreignKeyName="FK_DEVICE_USER_ID" references="person(user_id)"/>
+        </column>
+        <column name="device_name" type="varchar(255)"/>
+        <column name="device_type" type="int">
+            <constraints foreignKeyName="FK_DEVICE_DEVICE_TYPE" references="lookup(lookup_id)"/>
+        </column>
+        <column name="license" type="int">
+            <constraints foreignKeyName="FK_DEVICE_LICENSE" references="lookup(lookup_id)"/>
+        </column>
+        <column name="device_code" type="varchar(255)"/>
+        <column name="serial_numbers" type="varchar(255)"/>
+        <column name="device_status" type="int">
+            <constraints foreignKeyName="FK_DEVICE_STATUS" references="lookup(lookup_id)"/>
+        </column>
+    </createTable>
+</changeSet>
+<!-- ***************************************New ChangeSet with indexing*********************************** -->
+
+
+    <changeSet id="5" author="sayeed">
+        <createIndex indexName="idx_person_username" tableName="person">
+            <column name="username"/>
+        </createIndex>
+        <createIndex indexName="idx_person_email" tableName="person">
+            <column name="email"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="6" author="sayeed">
+        <createIndex indexName="idx_category_name" tableName="category">
+            <column name="category_name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="7" author="sayeed">
+        <createIndex indexName="idx_lookup_category" tableName="lookup">
+            <column name="category_id"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="8" author="sayeed">
+        <createIndex indexName="idx_device_user_id" tableName="device">
+            <column name="user_id"/>
+        </createIndex>
+        <createIndex indexName="idx_device_type" tableName="device">
+            <column name="device_type"/>
+        </createIndex>
+        <createIndex indexName="idx_device_license" tableName="device">
+            <column name="license"/>
+        </createIndex>
+        <createIndex indexName="idx_device_status" tableName="device">
+            <column name="device_status"/>
+        </createIndex>
+        <createIndex indexName="idx_device_code" tableName="device">
+            <column name="device_code"/>
+        </createIndex>
+    </changeSet> 
+    
+    <!-- Add the 'role' column to the person table -->
+    <changeSet id="13" author="sayeed">
+        <addColumn tableName="person">
+            <column name="role" type="varchar(255)" defaultValue="ROLE_USER">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <!-- Insert Default Roles (You can insert roles for new users when registering) -->
+    <changeSet id="14" author="sayeed">
+        <update tableName="person">
+            <column name="role" value="ROLE_USER"/>
+        </update>
+    </changeSet>
+    
+       <!-- Add 'enabled' column as BOOLEAN (represented as TINYINT(1)) to the person table -->
+    <changeSet id="15" author="sayeed">
+        <addColumn tableName="person">
+            <column name="enabled" type="TINYINT(1)" defaultValue="1">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <!-- Set 'enabled' to 1 (TRUE) for all existing users -->
+    <changeSet id="16" author="sayeed">
+        <update tableName="person">
+            <column name="enabled" value="1"/>
+        </update>
+    </changeSet>
+    
+<!--     new changeset for AES
+ -->    
+   <changeSet id="17" author="sayeed">
+    <addColumn tableName="person">
+        <column name="iv" type="VARCHAR(255)" />
+    </addColumn>
+</changeSet>
+<!-- New changeset to update 'iv' column to NOT NULL -->
+<changeSet id="18" author="sayeed">
+    <addNotNullConstraint 
+        tableName="person" 
+        columnName="iv" 
+        columnDataType="VARCHAR(255)" />
+</changeSet>
+
+ <changeSet id="19" author="sayeed">
+        <!-- Add unique constraint for username -->
+        <addUniqueConstraint tableName="person" columnNames="username" constraintName="unique_username"/>
+    </changeSet>
+
+    <changeSet id="20" author="sayeed">
+        <!-- Add unique constraint for email -->
+        <addUniqueConstraint tableName="person" columnNames="email" constraintName="unique_email"/>
+    </changeSet>
+<changeSet id="21" author="sayeed">
+    <dropColumn tableName="person" columnName="iv"/>
+</changeSet>
+
+
+
+</databaseChangeLog>

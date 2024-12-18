@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.iot.domain.Device" table="device">
+        <id name="deviceId" column="device_id">
+            <generator class="native"/>
+        </id>
+        <property name="deviceName" column="device_name"/>
+        <many-to-one name="deviceType" class="com.iot.domain.Lookup" fetch="select" lazy="false">
+            <column name="device_type"/>
+        </many-to-one>
+        
+        <many-to-one name="license" class="com.iot.domain.Lookup" fetch="select" lazy="false">
+            <column name="license"/>
+        </many-to-one>
+        <property name="deviceCode" column="device_code"/>
+        <property name="serialNumbers" column="serial_numbers"/>
+        <many-to-one name="deviceStatus" class="com.iot.domain.Lookup" fetch="select" lazy="false">
+            <column name="device_status"/>
+        </many-to-one>
+        <property name="userId" column="user_id"/>  <!-- Map userId to database -->
+    </class>
+</hibernate-mapping>
+
+

@@ -1,0 +1,437 @@
+/* Style for input fields */
+.input-field {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon inside the textbox */
+    position: relative;
+}
+
+
+/* Style for password fields */
+.password-field {
+    padding-right: 40px; /* Extra padding to make space for the eye icon */
+}
+
+/* Style for confirm password fields */
+.confirm-password-field {
+    padding-right: 40px; /* Extra padding for confirm password */
+}
+
+/* Eye icon style */
+.eye-icon-password {
+   position: absolute;
+    right: 19px;
+    top: 291px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.eye-icon-confirm-password {
+        position: absolute;
+    right: 19px;
+    top: 74%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Met password requirement styles */
+.password-requirement-met {
+    color: green;
+}
+
+/* Regular password requirement styles */
+.password-requirement {
+    color: red;
+}
+
+
+
+.error-label {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block; /* Ensure it's a block element */
+}
+.error-label {
+    color: red;
+    font-weight: bold;
+}
+
+.message-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+}
+
+.message-box button {
+    margin-top: 10px;
+}
+/* General Styles */
+.login-bt {
+    background-color: "#0ba6ff";
+}
+
+.logout-bt {
+    border: none;
+    font-size: 18px;
+}
+
+.add-bt {
+    background-color: "#0ba6ff";
+    font-size: 18px;
+}
+
+.login-font {
+    font-size: 15px;
+}
+
+.add-device {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.display-username {
+    padding: 20px;
+    position: absolute;
+    top: 1%;
+    left: 6%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.save-bt {
+    width: 42%;
+    padding: 10px;
+    background-color: #0ba6ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: -8px;
+    font-size: large;
+}
+
+/* Login Panel */
+.login-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.login-heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+.login-font {
+    font-size: 14px;
+}
+
+.login-textbox {
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #0ba6ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.signup-link {
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0ba6ff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 130px;
+}
+
+/* Scrollable Table Container */
+.scrollable-table-container {
+    max-height: 400px; /* Limit visible rows */
+    overflow-y: auto; /* Allow scrolling */
+    width: 50%; /* Set the container width */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid #ccc; /* Optional border for alignment */
+    position: relative; /* This is essential for sticky positioning */
+}
+
+/* Table Styling */
+.deviceTable {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+    background-color: white;
+}
+
+/* Device Table Cells & Header */
+.deviceTable td, .deviceTable th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.deviceTable th {
+    position: sticky;
+    top: 0;
+    background-color: grey; /* Background color for the header */
+    z-index: 1; /* Ensures header stays above the table rows */
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Device Table Hover Effect */
+.deviceTable tr:hover {
+    background-color: rgba(202, 207, 203, 0.2);
+    cursor: pointer;
+}
+
+/* 2nd Page Styles */
+.display-username {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gwt-ListBox {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.device-panel {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+.device-input, .device-list {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Add Device Button */
+.add-bt {
+    width: 42%;
+    padding: 10px;
+    background-color: #0ba6ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+/* Logout Button */
+.logout-bt {
+    width: 5%;
+    padding: 10px;
+    background-color: #0ba6ff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 1600px;
+    margin-top: 5px;
+}
+
+/* 3rd Page Styles */
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.register-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #0ba6ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 80px;
+}
+
+.signin-link {
+    width: 50%;
+    padding: 0px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0ba6ff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 140px;
+}
+
+/* TabPanel Styling */
+.device-tab-panel .gwt-TabBar {
+    background-color: white;
+    padding: 10px 0;
+    margin-top: 14%;
+}
+
+.device-tab-panel .gwt-TabBar .gwt-Tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.device-tab-panel .gwt-TabBar .gwt-Tab:hover {
+    background-color: rgba(11, 166, 255, 0.8);  /* Lighter shade on hover */
+}
+
+.device-tab-panel .gwt-TabBar .gwt-Tab.gwt-TabSelected {
+    background-color: #0098db;  /* Different background color for selected tab */
+    font-weight: bold;
+}
+
+.device-tab-panel .gwt-TabContentPanel {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.device-tab-content {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.device-tab-panel .gwt-TabContentPanel.empty {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 50px 0;
+}
+
+.device-tab-panel .gwt-TabPanelBottom {
+    border-style: none;
+    border-color: white;
+}
+
+/* Scrollable Table Panel within Tab */
+.scrollableTablePanel {
+    overflow: auto;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    height: 590px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Scrollable Table Container (inside Tab) */
+.scrollable-table-container {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    position: relative; /* Important for sticky */
+}
+/* CSS for header row */
+.tableHeader {
+    font-size: large;
+    background-color: darkgrey;
+    font-weight: bold;
+    position: sticky;
+    top: -1px; 
+    z-index: 10;
+}
+
+.tableHeader:hover {
+    background-color: darkgrey !important; 
+    cursor: default !important;
+}
+/* Table Styling inside Tab */
+.deviceTable {
+    width: 100%;
+    border-collapse: collapse;
+        background-color: whitesmoke;
+}
+
+.deviceTable td, .deviceTable th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: large;
+}
+
+.deviceTable th {
+    position: sticky;
+    top: 0;
+    background-color: grey;
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .deviceTable tr:hover {
+    background-color: rgba(202, 207, 203, 0.2);
+}
+ */
+.device-tab-panel {
+    position: absolute;
+    top: 38%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
